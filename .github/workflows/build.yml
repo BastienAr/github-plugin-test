@@ -1,0 +1,13 @@
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: sleep
+        run: sleep 10
+      - name: pass
+        run: echo Passed
